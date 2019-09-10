@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/edit.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Movie Cruiser</h2>
+        <span><i id="icon" class="fa fa-film"></i></span>
+
+        <span>
+            <h4><a id="movie" href="movie-list-admin.html">Movies</a></h4>
+        </span>
+    </div>
+    <div class="homeedit">
+
+        <h1 class="name">Edit Movie</h1>
+        <table id="active" border="0" align="center">
+            <form name="formValidate">
+                <tr>
+                    <td align="left">Title</td>
+                </tr>
+                <tr>
+                    <td align="left" colspan="4"><input type="text" name="title" id="title" size="40"
+                             required></td>
+                </tr>
+                <tr>
+                    <td align="left"><label>Gross($)</label></td>
+                    <td><label>Active</label></td>
+                    <td><label>Date of Launch</label></td>
+                    <td><label>Genre</label></td>
+                </tr>
+                <tr>
+                    <td align="left"><input type="text" name="boxOffice" id="boxOffice" size="10" required></td>
+                    <td><input type="radio" name="active" id="activeyes" value="yes">Yes
+                        <input type="radio" id="activeno" name="active" value="no">No</td>
+                    <td><input type="text" name="date" id="dateOfLaunch" size="10"></td>
+                    <td>
+                        <select id="genre">
+                            <option id="m" value="scienceFiction">Science Fiction</option>
+                            <option id="s" value="superhero">Superhero</option>
+                            <option id="d" value="romance">Romance</option>
+                            <option id="r" value="comedy">Comedy</option>
+                            <option id="g" value="adventure">Adventure</option>
+                            <option id="t" value="thriller">Thriller</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <input type="checkbox" name="hasTeaser" id="hasTeaser">Has Teaser
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <button class="button" type="button" id="update" onclick="validate()">SAVE</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+
+
+    </div>
+    <div class="copy">
+        <footer>Copyrights &copy 2019</footer>
+    </div>
+
+
+</body>
+
+</html>
